@@ -1,9 +1,9 @@
-RTL PHP API
+PHP RTL API
 -----------
 
 This file gives a summary of the main features of RTL.
 
-RTL (REST and Twig layer) PHP API is an API / layer for interfacing with a REST
+PHP RTL (REST and Twig layer) API is an API / layer for interfacing with a REST
 service and working in conjunction with Twig (Symfony) templates.  It was
 developed to work with Django REST Framework but could be used to interface with
 any REST API via CURL.  The REST service is assumed to have authentication /
