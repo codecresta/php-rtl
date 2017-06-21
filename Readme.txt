@@ -24,12 +24,12 @@ renderListPage(getBaseName());
 The corresponding Twig template would be "foo.twig".
 
 It is possible to create a custom page through the RTL that could interface with
-say two REST end points using two Layer class instances.  Look at the render
-functions in "lib.php" an example of how to use the Layer class!  The Layer
+say two REST end points using two "Layer" class instances.  Look at the render
+functions in "lib.php" an example of how to use the Layer class!  The "Layer"
 class allows fields to be registered for interfacing with a REST API end point.
 
 So to use RTL a PHP script is required either on its own, for example
-using deleteNext, or in conjunction with a Twig template, for example using
+using "deleteNext", or in conjunction with a Twig template, for example using
 "renderGetPageId".
 
 It is neccessary to have a template called "api-error.twig" which has the
@@ -40,7 +40,7 @@ There are various functions in RTL for managing the variables array used
 to pass data to a Twig template.  There are also functions for managing PHP
 session variables in relation to the variables array.
 
-Here is an example PHP script called profile.php that uses RTL:
+Here is an example PHP script called "profile.php" that uses RTL:
 <?php
 	require "lib.php";
 	$action = renderEditPage(getBaseName(), ["about", "dt_of_birth", "gender",
