@@ -41,6 +41,9 @@ There are various functions in RTL for managing the variables array used
 to pass data to a Twig template.  There are also functions for managing PHP
 session variables in relation to the variables array.
 
+Twig and vendor directories must be set up for use with Twig and Composer, see
+"consts.php" for the relative location of these directories.
+
 Here is an example PHP script called "profile.php" that uses RTL:
 <?php
 	require "lib.php";

@@ -4,7 +4,7 @@
 		const CLIENT_SECRET = "client authentication secret goes here";
 		const API_URL = "http://127.0.0.1:6969";
 		const API_ERROR_LOG = "../APIErrorLog.txt";
-        // Twig and vendor directories must be set up for use with Twig:
+        // Twig and vendor directories must be set up for use with Twig and Composer:
 		const VENDOR_DIRECTORY = "vendor";
 		const TWIG_COMPILATION_DIRECTORY = "../twig_comp";
 		const TEMPLATE_DIRECTORY = "../tmpl";
