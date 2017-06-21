@@ -25,7 +25,7 @@ The corresponding Twig template would be "foo.twig".
 
 It is possible to create a custom page through the RTL that could interface with
 say two REST end points using two "Layer" class instances.  Look at the render
-functions in "lib.php" an example of how to use the Layer class!  The "Layer"
+functions in "lib.php" an example of how to use the "Layer" class!  The "Layer"
 class allows fields to be registered for interfacing with a REST API end point.
 
 So to use RTL a PHP script is required either on its own, for example
