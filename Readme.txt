@@ -3,11 +3,11 @@ PHP RTL API
 
 This file gives a summary of the main features of RTL.
 
-PHP RTL (REST and Twig layer) API is an API / layer for interfacing with a REST
-service and working in conjunction with Twig (Symfony) templates.  It was
-developed to work with Django REST Framework but could be used to interface with
-any REST API via CURL.  The REST service is assumed to have authentication /
-sessions.
+PHP RTL (REST and Twig layer) API is a framework / layer for interfacing with a
+REST service and working in conjunction with Twig (Symfony) templates.  It was
+developed to work with Django REST Framework but could be used to interface
+with any REST API via CURL.  The REST service is assumed to have authentication
+/ sessions.
 
 The following high level functions are available for managing / rendering
 particular pages or scripts corresponding to the various HTTP methods:
