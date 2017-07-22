@@ -9,8 +9,8 @@ developed to work with Django REST Framework but could be used to interface
 with any REST API via CURL.  The REST service is assumed to have authentication
 / sessions.
 
-The following high level functions are available for managing / rendering
-particular pages or scripts corresponding to the various HTTP methods:
+The following high level (CRUD like) functions are available for managing /
+rendering particular pages or scripts corresponding to the various HTTP methods:
 - get page, for displaying a single record (HTTP GET)
 - list page, for displaying multiple records (HTTP GET)
 - edit page (HTTP POST / PATCH)
