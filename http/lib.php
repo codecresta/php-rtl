@@ -95,7 +95,7 @@
 		return checkGets($end_point, [$element_name], [$type], $variables_array);
 	}
 	function checkGetElement($end_point, $element_names, $types_array, $element_name, $type, $values,
-            &$variables_array) {
+			&$variables_array) {
 		$result = subroutineGets($element_names, $types_array, $variables_array);
 		if ($result) {
 			$result = subroutineGet($element_name, $type, $variable) && in_array($variable, $values);
@@ -105,7 +105,7 @@
 		if (!$result)
 			renderIncompleteParameters($end_point);
 		return $result;
-    }
+	}
 	function element($element_name, $variables_array) {
 		return [$element_name => $variables_array[$element_name]];
 	}
@@ -132,7 +132,7 @@
 	}
 	function copySettings($names, &$variables_array) {
 		foreach($names as $name)
-		    copySetting($name, $variables_array);
+			copySetting($name, $variables_array);
 	}
 	function settings($names) {
 		$result = [];
@@ -207,7 +207,7 @@
 			$layer->setId($id);
 		if (empty($end_point))
 			$end_point = $template_name;
-        $layer->map = [HTTPStatus::NOT_FOUND => "dummy"];
+		$layer->map = [HTTPStatus::NOT_FOUND => "dummy"];
 		if ($layer->get($end_point)) {
 			$variables_array = [];
 			$layer->copyResponse($variables_array);
@@ -216,7 +216,7 @@
 			renderPage($template_name, $variables_array);
 		}
 		else if (!empty($layer->message))
-            renderPage("not-found");
+			renderPage("not-found");
 	}
 	function renderGetPageId($template_name, $call_function = "", $end_point = "") {
 		if (checkGet($template_name, "id", "int", $variables_array))

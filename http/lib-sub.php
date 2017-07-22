@@ -104,8 +104,8 @@
 		private $end_point;
 		private $curl_handle;
 		public $curl_info;
-        public $curl_errno;
-        public $curl_error;
+		public $curl_errno;
+		public $curl_error;
 		public $response;
 		public $code;
 		public $message;
@@ -259,8 +259,8 @@
 		private function execute() {
 			$response = curl_exec($this->curl_handle);
 			$this->curl_info = curl_getinfo($this->curl_handle);
-            $this->curl_errno = curl_errno($this->curl_handle);
-            $this->curl_error = curl_error($this->curl_handle);
+			$this->curl_errno = curl_errno($this->curl_handle);
+			$this->curl_error = curl_error($this->curl_handle);
 			curl_close($this->curl_handle);
 			$this->response = json_decode($response, true);
 		}
@@ -291,8 +291,8 @@
 			}
 			else if (!empty($this->response))
 				$error_string .= $this->response.$new_line;
-            $error_string .= "Curl error no: ".$this->curl_errno.$new_line;
-            $error_string .= "Curl error: ".$this->curl_error.$new_line;
+			$error_string .= "Curl error no: ".$this->curl_errno.$new_line;
+			$error_string .= "Curl error: ".$this->curl_error.$new_line;
 			$error_string .= $new_line;
 			file_put_contents(Setting::API_ERROR_LOG, $error_string, FILE_APPEND);
 		}
