@@ -7,9 +7,17 @@ PHP RTL (REST and Twig layer) API is a framework / layer for interfacing with a
 REST service and working in conjunction with Twig (Symfony) templates.  It was
 developed to work with Django REST Framework but could be used to interface
 with any REST API via CURL.  The REST service is assumed to have authentication
-/ sessions.
+/ sessions, although this feature can be turned off for specific end points.
 
-The following high level (CRUD like) functions are available for managing /
+The purpose of RTL is to minimise the code base for CRUD (create, read, update
+and delete) pages and to separate out (PHP) logic required for front end
+operations (such as page redirection and managing session variables) from front
+/ back end communications.  RTL also provides many helper functions to
+seamlessly integrate common front and back end functionality.  It is possible to
+go beyond CRUD operations by creating a PHP script that uses RTL to interface
+with two or more REST API end points using as many "Layer" (see below) objects.
+
+The following high level (CRUD like) operations are available for managing /
 rendering particular pages or scripts corresponding to the various HTTP methods:
 - get page, for displaying a single record (HTTP GET)
 - list page, for displaying multiple records (HTTP GET)
@@ -23,11 +31,9 @@ for example if the script was called "foo.php":
 renderListPage(getBaseName());
 The corresponding Twig template would be "foo.twig".
 
-It is possible to create a custom page through the RTL that could interface with
-say two REST end points using two "Layer" class instances.  Look at the render
-functions in "lib.php" for an example of how to use the "Layer" class!  The
-"Layer" class allows fields to be registered for interfacing with a REST API end
-point.
+Look at the render functions in "lib.php" for an example of how to use the
+"Layer" class!  The "Layer" class allows fields to be registered for interfacing
+with a REST API end point.
 
 So to use RTL a PHP script is required either on its own, for example
 using "deleteNext", or in conjunction with a Twig template, for example using
