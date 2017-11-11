@@ -121,12 +121,6 @@
 	function fileInput($file_name) {
 		return $_FILES[$file_name];
 	}
-	function resumeName($element_name = "") {
-		$result = "resume";
-		if (!empty($element_name))
-			$result .= ".".$element_name;
-		return $result;
-	}
 	function copySetting($name, &$variables_array) {
 		$variables_array[$name] = constant("Setting::".$name);
 	}

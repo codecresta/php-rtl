@@ -17,6 +17,12 @@
 		checkSession();
 		$_SESSION[$element_name] = $value;
 	}
+	function resumeName($element_name = "") {
+		$result = "resume";
+		if (!empty($element_name))
+			$result .= ".".$element_name;
+		return $result;
+	}
 	function setSessionResume($element_name, $value) {
 		setSession(resumeName($element_name), $value);
 	}
