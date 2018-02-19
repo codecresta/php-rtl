@@ -88,7 +88,7 @@
 	function checkGets($end_point, $element_names, $types_array, &$variables_array) {
 		$result = subroutineGets($element_names, $types_array, $variables_array);
 		if (!$result)
-			renderIncompleteParameters($end_point);
+			renderIncorrectParameters($end_point);
 		return $result;
 	}
 	function checkGet($end_point, $element_name, $type, &$variables_array) {
@@ -103,7 +103,7 @@
 				$variables_array[$element_name] = $variable;
 		}
 		if (!$result)
-			renderIncompleteParameters($end_point);
+			renderIncorrectParameters($end_point);
 		return $result;
 	}
 	function element($element_name, $variables_array) {
@@ -312,7 +312,7 @@
 	function errorMessage($variables_array) {
 		return !empty($variables_array["error_message"]);
 	}
-	function renderIncompleteParameters($end_point) {
+	function renderIncorrectParameters($end_point) {
 		renderWebError($end_point, Setting::INCORRECT_PARAMETERS);
 	}
 	function refreshTokens() {
