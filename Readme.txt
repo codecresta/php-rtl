@@ -1,5 +1,6 @@
 PHP RTL API
 -----------
+(email: danwgrace@gmail.com)
 
 This file gives a summary of the main features of RTL.
 
@@ -71,6 +72,3 @@ should have corresponding variables in the "profile" Twig template.  Here if the
 profile is saved by the user then a value for the field "format" is retrieved
 from the REST API and used to set a PHP session variable of the same name.  The
 user is then directed to the page "launchpad.php".
-
-Code Cresta, 2017
-http://www.codecresta.com
