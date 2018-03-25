@@ -1,6 +1,5 @@
 PHP RTL API
 -----------
-(email: danwgrace@gmail.com)
 
 This file gives a summary of the main features of RTL.
 
